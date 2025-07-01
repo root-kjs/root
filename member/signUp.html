@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>회원가입 - Root.Lab</title>
+    <meta name="Description" content="루트랩의 다양한 서비스를 이용하기 위해 회원가입을 해주세요."/>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../css/layout.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../css/signUp.css'>
+</head>
+<body>
+<div id="container">
+    <header>
+        <div class="sticky_header">
+            <div class="logo">
+                <a href="index.html">
+                    <strong class="logo">Root.Lab</strong>
+                    <span>소상공인 비즈니스 플랫폼</span>
+                </a>
+            </div>
+            <nav class="gnb">
+                <ul>
+                    <li><a href="#">서비스소개</a></li>
+                    <li><a href="#">구독이벤트</a></li>
+                    <li><a href="#">데모체험</a></li>
+                    <li><a href="#">고객지원</a></li>
+                </ul>
+            </nav>
+            <ul class="member_menu">
+                <li><a href="#">로그인</a></li>
+                <li><a href="#">회원가입</a></li>
+                <li class="menu_icon">
+                    <a href="#" aria-label="전체메뉴" >
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" data-seed-icon="true" data-seed-icon-version="0.0.23" width="24" height="24"><g><g><path d="M2 4C2 3.44772 2.44772 3 3 3H21C21.5523 3 22 3.44772 22 4C22 4.55228 21.5523 5 21 5H3C2.44772 5 2 4.55228 2 4Z" fill="currentColor"></path><path d="M2 12C2 11.4477 2.44772 11 3 11H21C21.5523 11 22 11.4477 22 12C22 12.5523 21.5523 13 21 13H3C2.44772 13 2 12.5523 2 12Z" fill="currentColor"></path><path d="M3 19C2.44772 19 2 19.4477 2 20C2 20.5523 2.44772 21 3 21H21C21.5523 21 22 20.5523 22 20C22 19.4477 21.5523 19 21 19H3Z" fill="currentColor"></path></g></g></svg>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- sticky_header end -->
+    </header>
+    <!-- header end -->
+    <main>
+        <div class="signUpWrap">
+            <h1>회원가입</h1>
+            <p>이제 루트랩과 함께 스마트한 비즈니스를 시작하세요.</p>
+            <!-- 회원가입 입력폼 시작 -->
+            <form action="#" method="post">
+                <label for="userType">회원유형선택</label>
+                <div id="userTypeInput">
+                    <a href="javascript:;">일반회원</a>
+                    <a href="javascript:;">사업자</a>
+                    <a href="javascript:;">단체/모임</a>
+                </div>
+                <label for="loginIDInput">아이디</label>
+                <input type="text" id="loginIDInput" name="loginIDInput" required placeholder="아이디">
+                <label for="pwdInput">비밀번호</label>
+                <input type="pwdInput" id="pwdInput" name="pwdInput" required placeholder="비밀번호(8자리 이상)">
+                <label for="emailInput">이메일</label>
+                <input type="emailInput" id="emailInput" name="emailInput" required placeholder="비밀번호 찾기(본인 확인용)">
+                <hr/>
+                <label for="nameInput">이름</label>
+                <input type="text" id="nameInput" name="nameInput" required placeholder="이름">
+                <label for="birthInput">생년월일</label>
+                <input type="date" id="birthInput" name="birthInput" required placeholder="생년월일 8자리(20001230)">
+                <div id="genderTypeInput">
+                    <span>성별</span>
+                    <input type="radio" id="genderMaleInput"/><label for="genderMale">남성</label>
+                    <input type="radio" id="genderFemaleInput"/><label for="genderFemale">여성</label>   
+                </div>
+                <div id="dfInput">
+                    <span>구분</span>
+                    <input type="radio" id="domesticInput"/><label for="genderMale">내국인</label>
+                    <input type="radio" id="foreignInput"/><label for="genderFemale">외국인</label>   
+                </div>
+                <label for="phoneInput">휴대폰번호</label>
+                <input type="tel" id="phoneInput" name="phoneInput" required placeholder=" - 빼고 숫자만 입력">
+                <label for="agreeTerms">
+                    <input type="checkbox" id="agreeTerms" name="agreeTerms" required>
+                    <span>이용약관 및 개인정보처리방침에 동의합니다.</span>
+                </label>
+                <button type="submit">회원가입</button>
+                <p class="login_link">이미 계정이 있으신가요? <a href="#">로그인</a></p>
+            </form>
+            <!-- 회원가입 입력폼 끝 -->
+        </div>
+    </main>  
+    <!-- main end -->
+    <footer>
+        <ul class="footer_menu">
+            <li><a href="#">개인정보처리방침</a></li>
+            <li><a href="#">이용약관</a></li>
+            <li><a href="#">고객센터</a></li>
+        </ul>
+        <address>
+            <span>상호명 : 루트랩 주식회사</span>
+            <span>주소 : [00000] 인천광역시 부평구 부평0동 더조은 빌딩 0층 000 호</span>
+            <span>전화 : 0000-0000</span>
+            <span>팩스 : 0000-0000</span>
+            <span>대표 : 김진숙</span>
+            <span>사업자등록번호 : 123-45-67890</span>
+            <span>이메일 : <a href="emailto:">root.kjs82@gmail.com</a></span>
+        </address>
+        <small>&copy; 2025 RootLab. All rights reserved.</small>
+    </footer>  
+    <!-- footer end -->
+</div>  
+<!-- container end -->
+<script src='nav.js'></script>
+</body>
+</html>

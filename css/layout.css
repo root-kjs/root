@@ -1,0 +1,38 @@
+*{ margin: 0; padding: 0; box-sizing: border-box;  }
+li{ list-style: none; }
+a{ text-decoration: none; color: rgba(0,0,0,.9);}
+
+/* 공통 스타일 */
+.green{ color: rgba(0, 191, 99, 1);  }
+
+
+/* #container */
+/* #container{ } */
+
+
+/* header */
+header{  display: contents; }
+.sticky_header{ position: sticky; top:0;  max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; padding: 15px 10px; }
+.sticky_header > .logo a{ font-size: 24px; color: rgba(0, 191, 99, 1); }
+.sticky_header > .logo a span{ display:block;  font-size:11px;  line-height: 100%;  letter-spacing: -1px; }
+.sticky_header::before{ content: ""; position: fixed; top: 0; left: 0; width: 100%; height: 80px; background: rgba(255,255,255,1); z-index: -1; }
+
+.sticky_header > nav > ul{ display: flex;  justify-content: space-between; align-items: center; }
+.sticky_header > nav > ul li a{ display: block; padding: 10px 30px; font-size: 18px; line-height: 100%;  font-weight: 700; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; word-break: break-all; }
+
+.sticky_header > .member_menu{ display: flex; justify-content: space-between; align-items: center; font-size: 13px; }
+.sticky_header > .member_menu li a{ display:block; padding:0 10px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; word-break: break-all; }
+.sticky_header > .member_menu li.menu_icon a{ display:block; padding:5px 0 0 10px; }
+
+
+/* main */
+main{  max-width: 1200px; margin: 0 auto; display: flex;  justify-content: center; align-items: center; min-height: 700px;  }
+.main_text{ text-align: center; }
+
+/* footer */
+footer{  max-width: 1200px; margin: 0 auto; padding: 20px; text-align: center; color: rgba(0,0,0,.7); }
+.footer_menu{ display: flex; justify-content: center; align-items: center; font-size: 14px; }
+.footer_menu li a{ display: block; padding: 10px;  color: rgba(0, 191, 99, 1); font-weight: 700; }
+address{ font-size: 14px; font-style: normal; }
+address span{ display: inline-block; padding: 1px 5px; }
+small{ font-size: 13px; font-weight: 600; padding: 20px 0; display: block; }
