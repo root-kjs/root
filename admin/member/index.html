@@ -2,53 +2,72 @@
 <html>
 <head>
     <meta charset='utf-8'>
-    <title>회원현황 > 회원관리 > ADMIN(Root.Lab)</title>
+    <title>회원현황 - 회원관리(ADMIN)</title>
     <meta name="Description" content="회원현황파악/상세정보조회/등록/수정/삭제를 관리합니다."/>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='css/reset.css'>
-    <link rel='stylesheet' type='text/css' media='screen' href='css/login.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../css/reset.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../css/layout.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../css/user.css'>
     <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
     <link rel="apple-touch-icon" sizes="180x180" href="../img/apple-touch-icon.png">
 </head>
 <body>
 <div id="container">
     <header>
+        <!-- sticky_header start -->
         <div class="sticky_header">
-            <div class="logo">
-                <a href="../index.html">
-                    <strong class="logo">Root.Lab</strong>
-                    <span>소상공인 비즈니스 플랫폼</span>
-                </a>
+            <div class="header_logo">
+                <a href="../index.html" class="logo"><strong>Root.Lab</strong><span>소상공인 비즈니스 플랫폼</span></a>
+                <span class="menu_icon" aria-label="전체메뉴" >
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" data-seed-icon="true" data-seed-icon-version="0.0.23" width="24" height="24"><g><g><path d="M2 4C2 3.44772 2.44772 3 3 3H21C21.5523 3 22 3.44772 22 4C22 4.55228 21.5523 5 21 5H3C2.44772 5 2 4.55228 2 4Z" fill="currentColor"></path><path d="M2 12C2 11.4477 2.44772 11 3 11H21C21.5523 11 22 11.4477 22 12C22 12.5523 21.5523 13 21 13H3C2.44772 13 2 12.5523 2 12Z" fill="currentColor"></path><path d="M3 19C2.44772 19 2 19.4477 2 20C2 20.5523 2.44772 21 3 21H21C21.5523 21 22 20.5523 22 20C22 19.4477 21.5523 19 21 19H3Z" fill="currentColor"></path></g></g></svg>
+                </span>
+            </div>
+            <div class="header_search">
+                <form action="#" method="get" class="search_form">
+                    <input type="text" name="search" placeholder="메뉴/기능 겁색" aria-label="검색어 입력">
+                    <button type="submit" class="search_btn">검색</button>
+                </form>
             </div>
             <nav class="gnb">
                 <ul>
-                    <li><a href="#" onclick="alert('준비중입니다.');">서비스소개</a></li>
-                    <li><a href="#" onclick="alert('준비중입니다.');">구독신청</a></li>
-                    <li><a href="demo/">데모체험</a></li>
-                    <li><a href="#" onclick="alert('준비중입니다.');">고객지원</a></li>
+                    <li class="active"><a href="index.html">회원관리</a></li>
+                    <li><a href="#" onclick="alert('준비중입니다.');">구독관리</a></li>
+                    <li><a href="#" onclick="alert('준비중입니다.');">프로젝트관리</a></li>
+                    <li><a href="#" onclick="alert('준비중입니다.');">매출/매입관리</a></li>
+                    <li><a href="#" onclick="alert('준비중입니다.');">통계분석</a></li>
+                    <li><a href="#" onclick="alert('준비중입니다.');">시스템관리</a></li>
                 </ul>
             </nav>
             <ul class="member_menu">
-                <li><a href="member/login.html">로그인</a></li>
-                <li><a href="member/signUp.html">회원가입</a></li>
-                <li class="menu_icon">
-                    <a href="#" aria-label="전체메뉴" >
-                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" data-seed-icon="true" data-seed-icon-version="0.0.23" width="24" height="24"><g><g><path d="M2 4C2 3.44772 2.44772 3 3 3H21C21.5523 3 22 3.44772 22 4C22 4.55228 21.5523 5 21 5H3C2.44772 5 2 4.55228 2 4Z" fill="currentColor"></path><path d="M2 12C2 11.4477 2.44772 11 3 11H21C21.5523 11 22 11.4477 22 12C22 12.5523 21.5523 13 21 13H3C2.44772 13 2 12.5523 2 12Z" fill="currentColor"></path><path d="M3 19C2.44772 19 2 19.4477 2 20C2 20.5523 2.44772 21 3 21H21C21.5523 21 22 20.5523 22 20C22 19.4477 21.5523 19 21 19H3Z" fill="currentColor"></path></g></g></svg>
-                    </a>
-                </li>
+                <li><a href="index.html" onclick="">김진숙</a><span>(admin)</span></li>
+                <li><button onclick="">로그아웃</button></li>
+                <li><a href="index.html" onclick="">홈페이지</a></li>
             </ul>  
         </div>
         <!-- sticky_header end -->
     </header>
     <!-- header end -->
-    <main>
-        <div class="main_text">
-            <h1>회원현황</h1>
+    <!-- aside(lnb) start -->
+    <aside class="lnb">
+        <div class="lnb_menu">
+            <h2>회원관리</h2>
+            <ul>
+                <li><a href="index.html" class="active">회원현황</a></li>
+                <li><a href="#" onclick="alert('준비중입니다.');">회원그룹/등급설정</a></li>
+                <li><a href="#" onclick="alert('준비중입니다.');">회원권한설정</a></li>
+                <li><a href="#" onclick="alert('준비중입니다.');">관리자설정</a></li>
+            </ul>
         </div>
+    </aside>
+    <!-- aside(lnb) end -->
+    <!-- main start -->
+    <main>
+        <h1>회원현황</h1>
     </main>  
     <!-- main end -->
+    <!-- footer start -->
     <footer>
-        <small>&copy; 2025 RootLab. All rights reserved.</small>
+        <small>&copy; 2025 Root.Lab</small>
     </footer>  
     <!-- footer end -->
 </div>  

@@ -1,6 +1,6 @@
 .gnb{ display: none; }
 
-.signUpWrap{ max-width: 550px; background: rgba(255,255,255,1); margin: 0 auto; padding: 30px 50px 40px; border-radius: 30px; box-shadow: 0 0 10px rgba(0,0,0,.1); }
+.signUpWrap{ max-width: 550px; background: rgba(255,255,255,1); margin: 0 auto; padding: 40px 50px; border-radius: 40px; box-shadow: 0 0 10px rgba(0,0,0,.1); }
 .signUpWrap > h1{ text-align: center; font-size: 30px;  color: #333; }
 .signUpWrap > p{ font-size: 16px; margin:5px 0 20px; color: #555; text-align: center; }
 .signUpWrap > p a{ color:  rgba(0, 191, 99, 1); font-weight: 500; }
