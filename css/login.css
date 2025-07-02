@@ -11,7 +11,7 @@
 .loginWrap form > section > input{  font-size:16px; padding: 13px 20px; border-radius:20px; border:0; background: rgba(0,0,0,.1); }
 .loginWrap form > section > div{ padding: 10px 0; }
 .loginWrap form > section > div b{ font-weight: 500; display: inline-block; padding: 0 5px 0 25px; }
-.loginWrap form button{ flex: 1 1 100%; width:100%; margin:5px 0; padding: 10px; border-radius:30px; border:0; background: rgba(0,0,0,.1); font-size: 18px; font-weight:600; color:rgba(0,0,0,.5);  }
+.loginWrap form button{ flex: 1 1 100%; width:100%; margin:5px 0; padding: 10px; border-radius:30px; border:0; background: rgba(0,0,0,.1); font-size: 18px; font-weight:500; color:rgba(0,0,0,.5); letter-spacing:1px }
 
 .loginWrap form #userTypeInput{ display: flex; justify-content: space-between; align-items: center; }
 .loginWrap form #userTypeInput > button{ font-size: 14px; margin:0; }

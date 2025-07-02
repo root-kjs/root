@@ -5,32 +5,32 @@
     <title>회원현황 - 회원관리(ADMIN)</title>
     <meta name="Description" content="회원현황파악/상세정보조회/등록/수정/삭제를 관리합니다."/>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='../css/reset.css'>
-    <link rel='stylesheet' type='text/css' media='screen' href='../css/layout.css'>
-    <link rel='stylesheet' type='text/css' media='screen' href='../css/user.css'>
-    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
-    <link rel="apple-touch-icon" sizes="180x180" href="../img/apple-touch-icon.png">
+    <link rel='stylesheet' type='text/css' media='screen' href='/admin/css/reset.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='/admin/css/layout.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='/admin/css/user.css'>
+    <link rel="shortcut icon" href="/admin/img/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="/admin/img/apple-touch-icon.png">
 </head>
 <body>
 <div id="container">
     <header>
         <!-- sticky_header start -->
-        <div class="sticky_header">
-            <div class="header_logo">
-                <a href="../index.html" class="logo"><strong>Root.Lab</strong><span>소상공인 비즈니스 플랫폼</span></a>
-                <span class="menu_icon" aria-label="전체메뉴" >
-                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" data-seed-icon="true" data-seed-icon-version="0.0.23" width="24" height="24"><g><g><path d="M2 4C2 3.44772 2.44772 3 3 3H21C21.5523 3 22 3.44772 22 4C22 4.55228 21.5523 5 21 5H3C2.44772 5 2 4.55228 2 4Z" fill="currentColor"></path><path d="M2 12C2 11.4477 2.44772 11 3 11H21C21.5523 11 22 11.4477 22 12C22 12.5523 21.5523 13 21 13H3C2.44772 13 2 12.5523 2 12Z" fill="currentColor"></path><path d="M3 19C2.44772 19 2 19.4477 2 20C2 20.5523 2.44772 21 3 21H21C21.5523 21 22 20.5523 22 20C22 19.4477 21.5523 19 21 19H3Z" fill="currentColor"></path></g></g></svg>
+        <div class="stickyHeader">
+            <div class="headerLogo">
+                <a href="/admin/dashboard/" class="logo"><strong>Root.Lab</strong><span>소상공인 비즈니스 플랫폼</span></a>
+                <span class="menuIcon" aria-label="전체메뉴" >
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="//www.w3.org/2000/svg" data-seed-icon="true" data-seed-icon-version="0.0.23" width="24" height="24"><g><g><path d="M2 4C2 3.44772 2.44772 3 3 3H21C21.5523 3 22 3.44772 22 4C22 4.55228 21.5523 5 21 5H3C2.44772 5 2 4.55228 2 4Z" fill="currentColor"></path><path d="M2 12C2 11.4477 2.44772 11 3 11H21C21.5523 11 22 11.4477 22 12C22 12.5523 21.5523 13 21 13H3C2.44772 13 2 12.5523 2 12Z" fill="currentColor"></path><path d="M3 19C2.44772 19 2 19.4477 2 20C2 20.5523 2.44772 21 3 21H21C21.5523 21 22 20.5523 22 20C22 19.4477 21.5523 19 21 19H3Z" fill="currentColor"></path></g></g></svg>
                 </span>
             </div>
-            <div class="header_search">
-                <form action="#" method="get" class="search_form">
+            <div class="headerSearch">
+                <form action="#" method="get">
                     <input type="text" name="search" placeholder="메뉴/기능 겁색" aria-label="검색어 입력">
-                    <button type="submit" class="search_btn">검색</button>
+                    <button type="submit" class="searchMdule">검색</button>
                 </form>
             </div>
             <nav class="gnb">
                 <ul>
-                    <li class="active"><a href="index.html">회원관리</a></li>
+                    <li class="active"><a href="/admin/member/">회원관리</a></li>
                     <li><a href="#" onclick="alert('준비중입니다.');">구독관리</a></li>
                     <li><a href="#" onclick="alert('준비중입니다.');">프로젝트관리</a></li>
                     <li><a href="#" onclick="alert('준비중입니다.');">매출/매입관리</a></li>
@@ -38,33 +38,140 @@
                     <li><a href="#" onclick="alert('준비중입니다.');">시스템관리</a></li>
                 </ul>
             </nav>
-            <ul class="member_menu">
-                <li><a href="index.html" onclick="">김진숙</a><span>(admin)</span></li>
+            <ul class="memberMenu">
+                <li><a href="/admin/member/" onclick="">김진숙</a><span>(admin)</span></li>
                 <li><button onclick="">로그아웃</button></li>
-                <li><a href="index.html" onclick="">홈페이지</a></li>
+                <li><a href="/" onclick="">홈페이지</a></li>
             </ul>  
         </div>
         <!-- sticky_header end -->
     </header>
     <!-- header end -->
-    <!-- aside(lnb) start -->
-    <aside class="lnb">
-        <div class="lnb_menu">
-            <h2>회원관리</h2>
-            <ul>
-                <li><a href="index.html" class="active">회원현황</a></li>
-                <li><a href="#" onclick="alert('준비중입니다.');">회원그룹/등급설정</a></li>
-                <li><a href="#" onclick="alert('준비중입니다.');">회원권한설정</a></li>
-                <li><a href="#" onclick="alert('준비중입니다.');">관리자설정</a></li>
-            </ul>
-        </div>
-    </aside>
-    <!-- aside(lnb) end -->
-    <!-- main start -->
-    <main>
-        <h1>회원현황</h1>
-    </main>  
-    <!-- main end -->
+    <!-- 중앙본문 시작 -->
+    <div id="contentsWrap">
+        <!-- aside(lnb) start -->
+        <aside class="lnb">
+            <div class="lnbMenu">
+                <h1>회원관리</h1>
+                <ul>
+                    <li><a href="/admin/member/" class="active">회원현황</a></li>
+                    <li><a href="#" onclick="alert('준비중입니다.');">회원그룹/등급설정</a></li>
+                    <li><a href="#" onclick="alert('준비중입니다.');">회원권한설정</a></li>
+                    <li><a href="#" onclick="alert('준비중입니다.');">관리자설정</a></li>
+                </ul>
+            </div>
+        </aside>
+        <!-- aside(lnb) end -->
+        <!-- main start -->
+        <main id="membersStatus">
+            <!-- 페이지 타이틀 시작 -->
+            <div id="pageTitle">
+                <h2>회원현황</h2>
+                <span class="path">
+                    <a href="/admin/member/">회원관리</a>
+                    <a href="/admin/member/">회원현황</a>
+                </span>
+            </div>
+            <!-- 페이지 타이틀 끝 -->
+            <!-- R.검색/목록 시작 -->
+            <section class="listWrap">
+                <!-- 상세 검색창 시작 -->
+                <div class="detailSearch">
+                    <form action="#" method="get">
+                        <label for="memberTypeInput">회원유형
+                            <select id="memberTypeInput">
+                                <option value="" selected>전체</option>
+                                <option value="1">일반회원</option>
+                                <option value="2">사업자</option>
+                                <option value="3">단체/모임</option>
+                            </select>
+                        </label>
+                        <label for="subsStatusInput">구독상태
+                            <select id="subsStatusInput">
+                                <option value="" selected>전체</option>
+                                <option value="1">무료체험</option>
+                                <option value="2">구독중</option>
+                                <option value="3">구독취소</option>
+                            </select>
+                        </label>
+                        <label for="baseDateInput">검색기준일
+                            <select id="baseDateInput">
+                                <option value="1" selected>가입일</option>
+                                <option value="2">최종로그인</option>
+                            </select>
+                        </label>
+                        <label for="periodInput">검색기간
+                            <input id="startDay" type="date" placeholder="시작일" /> ~
+                            <input id="endDay" type="date" placeholder="종료일" /> 
+                        </label>
+                        <label for="baseDateInput">기간선택
+                            <select id="baseDateInput">
+                                <option value="1" selected>최근1주</option>
+                                <option value="2">최근1달</option>
+                                <option value="">전체</option>
+                            </select>
+                        </label>
+                        <label for="nameInput">회원명<input id="nameInput" type="text" placeholder="회원명" /></label>
+                        <label for="loginIdInput">로그인ID<input id="loginIdInput" type="text" placeholder="로그인ID" /></label>
+                        <label for="phoneInput">휴대폰번호<input id="phoneInput" type="number" placeholder="휴대폰번호" /></label>
+                        <button type="submit" class="searchMembers">검색</button>
+                    </form>
+                </div>
+                <!-- 상세 검색창 끝 -->
+                <!-- 목록 테이블 시작 -->
+                <div class="tableWrap">
+                    <table>
+                        <caption>검색결과 : 127 / 1,500,708</caption>
+                        <thead>
+                            <tr>
+                                <th>No</th>
+                                <th>회원유형</th>
+                                <th>회원명</th>
+                                <th>로그인ID</th>
+                                <th>구독상태</th>
+                                <th>휴대전화</th>
+                                <th>가입일</th>
+                                <th>최종로그인</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>10</td>
+                                <td>회원유형</td>
+                                <td>회원명</td>
+                                <td>로그인ID</td>
+                                <td>구독상태</td>
+                                <td>휴대전화</td>
+                                <td>가입일</td>
+                                <td>최종로그인</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <th colspan="8">
+                                   ◀ 1 2 3 ▶
+                                </th>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+                <!-- 목록 테이블 끝 -->
+            </section>
+            <!-- R.검색/목록 끝 -->
+            <!-- CUD.등록/수정 시작 -->
+            <section class="registWrap">
+                
+            </section>
+            <!-- CUD.등록/수정 끝 -->
+            <!-- R.상세정보 시작 -->
+            <section class="detailWrap">
+
+            </section>
+            <!-- R.상세정보 끝 -->
+        </main>
+        <!-- main end -->
+    </div>
+    <!-- 중앙본문 끝 -->
     <!-- footer start -->
     <footer>
         <small>&copy; 2025 Root.Lab</small>
@@ -72,7 +179,7 @@
     <!-- footer end -->
 </div>  
 <!-- container end -->
-<script src='../js/nav.js'></script>
-<script src='../js/user.js'></script>
+<script src='/admin/js/nav.js'></script>
+<script src='/admin/js/user.js'></script>
 </body>
 </html>

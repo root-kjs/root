@@ -4,17 +4,17 @@
 
 /* header */
 header{  display: contents; }
-.sticky_header{ position: sticky; top:0;  max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; padding: 10px; }
-.sticky_header > .logo a{ font-size: 24px; color: rgba(0, 191, 99, 1); }
-.sticky_header > .logo a span{ display:block;  font-size:11px;  line-height: 100%;  letter-spacing: -1px; }
-.sticky_header::before{ content: ""; position: fixed; top: 0; left: 0; width: 100%; height: 80px; background: #f0f0f0; z-index: -1; }
+.stickyHeader{ position: sticky; top:0;  max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; padding: 10px; }
+.stickyHeader > .logo a{ font-size: 24px; color: rgba(0, 191, 99, 1); }
+.stickyHeader > .logo a span{ display:block;  font-size:11px;  line-height: 100%;  letter-spacing: -1px; }
+.stickyHeader::before{ content: ""; position: fixed; top: 0; left: 0; width: 100%; height: 80px; background: #f0f0f0; z-index: -1; }
 
-.sticky_header > nav > ul{ display: flex;  justify-content: space-between; align-items: center; }
-.sticky_header > nav > ul li a{ display: block; padding: 10px 30px; font-size: 18px; line-height: 100%;  font-weight: 700; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; word-break: break-all; }
+.stickyHeader > nav > ul{ display: flex;  justify-content: space-between; align-items: center; }
+.stickyHeader > nav > ul li a{ display: block; padding: 10px 30px; font-size: 18px; line-height: 100%;  font-weight: 700; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; word-break: break-all; }
 
-.sticky_header > .member_menu{ display: flex; justify-content: space-between; align-items: center; font-size: 13px; }
-.sticky_header > .member_menu li a{ display:block; padding:0 10px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; word-break: break-all; }
-.sticky_header > .member_menu li.menu_icon a{ display:block; padding:5px 0 0 10px; }
+.stickyHeader > .memberMenu{ display: flex; justify-content: space-between; align-items: center; font-size: 13px; }
+.stickyHeader > .memberMenu li a{ display:block; padding:0 10px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; word-break: break-all; }
+.stickyHeader > .memberMenu li.menu_icon a{ display:block; padding:5px 0 0 10px; }
 
 
 /* main */
