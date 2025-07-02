@@ -27,7 +27,7 @@ header{  display: contents; }
 
 
 /* main */
-main{  max-width: 1200px; margin: 30px auto 50px; display: flex;  justify-content: center; align-items: center; min-height: 700px;  }
+main{  max-width: 1200px; margin: 50px auto; min-height: 500px;  }
 .main_text{ text-align: center; }
 
 /* footer */

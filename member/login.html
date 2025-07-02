@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>로그인 - Root.Lab</title>
+    <meta name="Description" content="루트랩은 꼭 필요한 기능만 간편하게 제공합니다."/>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../css/layout.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../css/login.css'>
+</head>
+<body>
+<div id="container">
+    <header>
+        <div class="sticky_header">
+            <div class="logo">
+                <a href="../index.html">
+                    <strong class="logo">Root.Lab</strong>
+                    <span>소상공인 비즈니스 플랫폼</span>
+                </a>
+            </div>
+            <nav class="gnb">
+                <ul>
+                    <li><a href="#">서비스소개</a></li>
+                    <li><a href="#">구독이벤트</a></li>
+                    <li><a href="#">데모체험</a></li>
+                    <li><a href="#">고객지원</a></li>
+                </ul>
+            </nav>
+            <ul class="member_menu">
+                <li><a href="login.html">로그인</a></li>
+                <li><a href="signUp.html">회원가입</a></li>
+                <li class="menu_icon">
+                    <a href="#" aria-label="전체메뉴" >
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" data-seed-icon="true" data-seed-icon-version="0.0.23" width="24" height="24"><g><g><path d="M2 4C2 3.44772 2.44772 3 3 3H21C21.5523 3 22 3.44772 22 4C22 4.55228 21.5523 5 21 5H3C2.44772 5 2 4.55228 2 4Z" fill="currentColor"></path><path d="M2 12C2 11.4477 2.44772 11 3 11H21C21.5523 11 22 11.4477 22 12C22 12.5523 21.5523 13 21 13H3C2.44772 13 2 12.5523 2 12Z" fill="currentColor"></path><path d="M3 19C2.44772 19 2 19.4477 2 20C2 20.5523 2.44772 21 3 21H21C21.5523 21 22 20.5523 22 20C22 19.4477 21.5523 19 21 19H3Z" fill="currentColor"></path></g></g></svg>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- sticky_header end -->
+    </header>
+    <!-- header end -->
+    <main>
+         <div class="main_text">
+            <h2 class="green">어서오세요!</h2>
+            <p>사장님께 꼭 필요한 기능만 맞춤제공합니다.</p>
+        </div>
+        <div class="loginWrap">
+            <h1>로그인</h1>
+            <!-- 로그인 입력폼 시작 -->
+            <form action="#" method="post">
+                <section>
+                    <input type="text" id="loginIDInput" name="loginIDInput" required placeholder="아이디">
+                    <input type="text" id="pwdInput" name="pwdInput" required placeholder="비밀번호(8자리 이상)">
+                    <button type="submit" class="selected">로그인</button>
+                </section>
+            <!-- 로그인 입력폼 끝 -->
+                <section>
+                    <a href="findId.html">아이디 찾기</a>
+                    <a href="findPwd.html">비밀번호 찾기</a>
+                    <a href="signUp.html">회원가입</a>
+                </section>
+            </form>
+        </div>
+    </main>  
+    <!-- main end -->
+    <footer>
+        <ul class="footer_menu">
+            <li><a href="privacyPolicy.html">개인정보처리방침</a></li>
+            <li><a href="termsOfUse.html">이용약관</a></li>
+            <li><a href="csSupport.html">고객센터</a></li>
+        </ul>
+        <address>
+            <span>상호명 : 루트랩 주식회사</span>
+            <span>주소 : [00000] 인천광역시 부평구 부평 1동 더조은 빌딩 7층 000호</span>
+            <span><a href="tel:">전화 : 0000-0000</a></span>
+            <span>팩스 : 0000-0000</span>
+            <span>사업자등록번호 : 123-45-67890</span>
+            <span>대표 : 김진숙</span>
+            <span>이메일 : <a href="mailto:root.kjs82@gmail.com">root.kjs82@gmail.com</a></span>
+        </address>
+        <small>&copy; 2025 RootLab. All rights reserved.</small>
+    </footer>  
+    <!-- footer end -->
+</div>  
+<!-- container end -->
+<script src='../js/nav.js'></script>
+<script src='../js/login.js'></script>
+</body>
+</html>
