@@ -1,0 +1,6 @@
+*{ margin: 0; padding: 0; box-sizing: border-box;  }
+li{ list-style: none; } 
+button{ cursor:pointer; }
+a{ text-decoration: none; color: rgba(0,0,0,.9);}
+body{ background: rgba(0,0,0,.05); }
+input[type=radio], input[type=checkbox]{ width: 20px; height: 20px; vertical-align:-30% }
