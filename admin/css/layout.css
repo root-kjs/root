@@ -61,25 +61,28 @@ main{  flex-grow: 1; position: sticky; top:0;  }
 .pageContent{ display: flex;  }
 /*  main(우측본문) > 양쪽 영역 */
 .bothArea{ display: flex; justify-content: space-between; align-items: stretch; background: rgba(255,255,255,1); }
-.bothArea section{ padding: 10px;  border-bottom: solid 1px rgba(0,0,0,.2); }
+.bothArea section{ padding:10px; border-bottom: solid 1px rgba(0,0,0,.2); }
 .bothArea section:last-child{ border-left: solid 1px rgba(0,0,0,.1); }
 
 
 
 /* 2.2.1. 페이지 타이틀 */
-.detailSearch{ display: flex; justify-content: space-between; align-items: center; padding: 10px 0; background: rgb(235, 255, 245); padding: 10px; font-size: 12px; line-height: 120%; }
+.detailSearch{ display: flex; justify-content: space-between; align-items: center; padding: 10px 0; background: rgb(235, 255, 245); padding: 10px; font-size: 12px; line-height: 120%; border-radius: 10px; }
 .detailSearch > form > label{ display:inline-block; padding:  0 5px; font-weight: 600; color: rgba(0,0,0,.7); margin: 2px 3px 2px 0;}
 .detailSearch > form > label > b{ display:inline-block;  min-width: 60px; }
 
 /* 스티키 테이블 */
-.tableWrap { position: relative; overflow: auto; width:500px; padding: 20px 0; }
+.tableWrap { position: relative; overflow: auto; width:500px; padding: 0; }
 .tableWrap table{  border-collapse: collapse; border-spacing: 0; font-size: 13px; line-height: 120%; color: rgba(0,0,0,.7); }
-.tableWrap table caption{ text-align: left; padding: 0 0 10px 0; }
 .tableWrap table th, .tableWrap table td{ padding:5px 2px; border: solid 1px rgba(0,0,0,.1); border-width:1px 0; text-align: center; vertical-align: middle; }
 .tableWrap table th{  font-weight: 600; min-width: 70px; }
+.tableWrap table th:first-child{  min-width:30px }
 .tableWrap table th.sticky{ position: sticky; top: 0; z-index: 1; }
 .tableWrap table td.sticky{ position: sticky; left: 0; z-index: 1; background: rgba(255,255,255,1); }       
 .tableWrap table tfoot th{ border: 0; }
+
+
+.titleBox{ display: flex; justify-content: space-between; font-size: 12px; padding: 10px 5px; }
 
 
 /*  main(우측본문) > 하단 영역 */
