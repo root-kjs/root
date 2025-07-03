@@ -1,32 +1,102 @@
+/* 전체 랩 */
+#container{ width: 100%; min-height: 100vh;  background: #f0f0f0; } 
 
-/* #container */
-/* #container{ } */
+/* 1. 해더(header) */
+header{  position: sticky; top:0;  margin: 0 auto; display: flex;  align-items: center; background: rgba(255,255,255,1); border-bottom: solid 1px rgba(0,0,0,.1); z-index: 1; padding: 5px; }
 
-/* header */
-header{  display: contents; }
-.stickyHeader{ position: sticky; top:0;  max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; padding: 10px; }
-.stickyHeader > .logo a{ font-size: 24px; color: rgba(0, 191, 99, 1); }
-.stickyHeader > .logo a span{ display:block;  font-size:11px;  line-height: 100%;  letter-spacing: -1px; }
-.stickyHeader::before{ content: ""; position: fixed; top: 0; left: 0; width: 100%; height: 80px; background: #f0f0f0; z-index: -1; }
+/* 1.1. 해더 우측 ( 로고/전체메뉴 ) */
+.logoHeader{ display: flex; align-items: center; width: 170px;   }
+.logoHeader .logo{ color: rgba(0, 191, 99, 1); display: block; padding:0 10px 0 20px; }
+.logoHeader .logo strong{ display: block;  font-size: 22px; line-height: 100%;  font-weight: 700; }
+.logoHeader .logo span{ display: block; padding:3px 0; font-size: 10px; line-height: 100%; font-weight: 400; letter-spacing:-0.7px; }
+.menuIcon{ display: inline-block;  cursor: pointer; padding: 0 5px 0 6px; opacity: .4; }
 
-.stickyHeader > nav > ul{ display: flex;  justify-content: space-between; align-items: center; }
-.stickyHeader > nav > ul li a{ display: block; padding: 10px 30px; font-size: 18px; line-height: 100%;  font-weight: 700; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; word-break: break-all; }
+/* 1.2. 해더 좌측 (.gnb ) */
+.gnb{ flex-grow: 1; display: flex; justify-content: space-between; align-items: center;  }
 
-.stickyHeader > .memberMenu{ display: flex; justify-content: space-between; align-items: center; font-size: 13px; }
-.stickyHeader > .memberMenu li a{ display:block; padding:0 10px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; word-break: break-all; }
-.stickyHeader > .memberMenu li.menu_icon a{ display:block; padding:5px 0 0 10px; }
+/* 1.2.1. 검색창 */
+.headerSearch form{ display: flex; justify-content: space-evenly; align-items: center; border:solid 1px rgba(0,0,0,.2); border-radius:30px; padding:5px; margin-left:25px; }
+
+.headerSearch input{ border:0; font-size: 14px; font-weight: 500; outline:none; padding: 1px 5px; }
+.headerSearch button{ display: none; }
+
+/* 1.2.2. nav(탑메뉴) */
+nav > ul{  display: flex; justify-content: space-evenly; align-items: center; }
+nav > ul > li > a{ display: block; font-size: 14px; line-height: 100%; padding: 5px 10px; color: rgba(0,0,0,.7); font-weight: 600; word-break: break-all; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+
+/* 1.2.3. 멤버 로그인 메뉴 */
+.memberMenu{ display: flex; justify-content: space-evenly; align-items: center; font-size: 13px; }
+.memberMenu li{ padding-left: 10px;}
+.memberMenu li a{ display: block; }
+.memberMenu li a b{ text-decoration: underline; }
+/* 1.  해더(header) 끝  */
 
 
-/* main */
-main{  max-width: 1200px; margin: 40px auto; min-height: 500px;  }
-.main_text{ text-align: center; margin: 30px auto 0; }
 
-/* footer */
-footer{  max-width: 1000px; margin: 0 auto; padding: 20px; text-align: center; color: rgba(0,0,0,.5); }
-.footer_menu{ display: flex; justify-content: center; align-items: center; font-size: 14px; }
-.footer_menu li a{ display: block; padding: 10px;  color: rgba(0, 191, 99, 1); font-weight: 700; }
-address{ font-size: 14px; font-style: normal; }
-address span{ display: inline-block; padding: 1px 5px; }
-address span::after{ content: ""; display: block; width: 1px; height: 13x; background: rgba(0,0,0,.3);  }
-address a{ color: rgba(0,0,0,.5);}
-small{ font-size: 13px; font-weight: 500; padding: 10px 0; display: block; color: rgba(0,0,0,.5); }
+/* 2. 중앙본문(#contentsWrap) */
+#contentsWrap{ display: flex; }
+
+/* 2.1. aside(좌측메뉴) */
+aside{ position: sticky; top:0; width: 100% ; min-height: 100vh; flex-shrink: 0; width: 180px; background: rgba(255,255,255,1); border-right: solid 1px rgba(0,0,0,.1);  }
+
+aside h2{ padding: 10px 5px 10px 12px; font-size: 18px; font-weight: 600; color: rgba(0,0,0,.9);  }
+
+
+aside > ul li.active a{ background: rgb(235, 255, 245); color: rgba(0, 191, 99, 1); font-weight: 600;}
+aside > ul li a{ display: block; padding: 5px 14px; font-size: 14px; font-weight: 500; color: rgba(0,0,0,.7); transition: .2s ease; }
+aside > ul li a:hover{ color: rgba(0, 191, 99, 1) }
+
+/* 2.2. main(우측본문) */
+main{  flex-grow: 1; position: sticky; top:0;  }
+
+/* 2.2.1. 페이지 타이틀 */
+.pageTitle{ display: flex;  align-items: flex-end; padding: 0 20px; background: rgba(255,255,255,1); border-bottom: solid 1px rgba(0,0,0,.1); padding: 5px 10px;}
+.pageTitle h1{ padding: 5px 7px; font-size: 18px; line-height: 100%; font-weight: 600; color: rgba(0,0,0,.9); }
+.path{ display: inline-block;  font-size: 12px; margin-bottom: 3px; }
+.path::before{ content: '홈'; padding: 0 5px;  }
+.path a::before{ content: ' > '; color: rgba(0,0,0,.5); }
+
+
+/* 2.2.2. 페이지 본문 */
+.pageContent{ display: flex;  }
+/*  main(우측본문) > 양쪽 영역 */
+.bothArea{ display: flex; justify-content: space-between; align-items: stretch; background: rgba(255,255,255,1); }
+.bothArea section{ padding: 10px;  border-bottom: solid 1px rgba(0,0,0,.2); }
+.bothArea section:last-child{ border-left: solid 1px rgba(0,0,0,.1); }
+
+
+
+/* 2.2.1. 페이지 타이틀 */
+.detailSearch{ display: flex; justify-content: space-between; align-items: center; padding: 10px 0; background: rgb(235, 255, 245); padding: 10px; font-size: 12px; line-height: 120%; }
+.detailSearch > form > label{ display:inline-block; padding:  0 5px; font-weight: 600; color: rgba(0,0,0,.7); margin: 2px 3px 2px 0;}
+.detailSearch > form > label > b{ display:inline-block;  min-width: 60px; }
+
+/* 스티키 테이블 */
+.tableWrap { position: relative; overflow: auto; width:500px; padding: 20px 0; }
+.tableWrap table{  border-collapse: collapse; border-spacing: 0; font-size: 13px; line-height: 120%; color: rgba(0,0,0,.7); }
+.tableWrap table caption{ text-align: left; padding: 0 0 10px 0; }
+.tableWrap table th, .tableWrap table td{ padding:5px 2px; border: solid 1px rgba(0,0,0,.1); border-width:1px 0; text-align: center; vertical-align: middle; }
+.tableWrap table th{  font-weight: 600; min-width: 70px; }
+.tableWrap table th.sticky{ position: sticky; top: 0; z-index: 1; }
+.tableWrap table td.sticky{ position: sticky; left: 0; z-index: 1; background: rgba(255,255,255,1); }       
+.tableWrap table tfoot th{ border: 0; }
+
+
+/*  main(우측본문) > 하단 영역 */
+
+
+
+
+
+/* 2. 중앙본문(#contentsWrap) 끝  */
+
+/* 3. 푸터(footer) */
+footer{  position: fixed; bottom:0; width:100%; margin: 0 auto; padding: 0 15px 4px; background: rgba(255,255,255,1); border-top: solid 1px rgba(0,0,0,.1);}
+small{ font-size: 12px; font-weight: 500; color: rgba(0,0,0,.5); }
+
+
+/* ========== 반응형 =========== */
+ @media (max-width: 1100px){
+    nav { display: none; } 
+    .memberMenu li a span{ display: none; } 
+ }
