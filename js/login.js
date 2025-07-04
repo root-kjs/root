@@ -32,6 +32,7 @@ function userLogin(){  console.log( '회원로그인(사용자단)' );
 
              // 로그인 사용자 정보 임시 저장 (세션 스토리지)
             let loginUser = member
+            setLoginUser( loginUser )
             sessionStorage.setItem('loginUser', JSON.stringify( loginUser ));
             //localStorage.setItem('loginUser', JSON.stringify( loginUser ) );
 
