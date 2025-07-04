@@ -1,5 +1,22 @@
 userInfo(  );
 
+//1. JASON호출_localStorage
+function getLoginUser(){  console.log( 'JASON호출_localStorage' );
+    let loginUser = sessionStorage.getItem( 'loginUser' )
+
+    if( loginUser == null ){
+        loginUser = [];
+    }else{
+        loginUser = JSON.parse( loginUser ); 
+    }
+    return loginUser;
+}
+
+// 2. JASON저장_localStorage
+function setLoginUser( loginUser ){  console.log( ' JASON저장_localStorage' ); 
+    sessionStorage.setItem('loginUser', JSON.stringify( loginUser ) )
+}
+
 
 function userInfo(  ){   console.log( '!회원정보 출력함수 >>> userInfo( loginId ) exe' ); 
    
