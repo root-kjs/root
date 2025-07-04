@@ -264,7 +264,7 @@ function userInfo( loginId ){   //console.log( '!회원정보 출력함수 >>> u
 } // userInfo( loginId ) end.
 
 //1. JASON호출_localStorage
-function getLoginUser(){  console.log( 'JASON호출_localStorage' );
+function getLoginUser(){  console.log( 'JASON호출_sessionStorage' );
     let loginUser = sessionStorage.getItem( 'loginUser' )
 
     if( loginUser == null ){
@@ -276,6 +276,6 @@ function getLoginUser(){  console.log( 'JASON호출_localStorage' );
 }
 
 // 2. JASON저장_localStorage
-function setLoginUser( loginUser ){  console.log( ' JASON저장_localStorage' ); 
+function setLoginUser( loginUser ){  console.log( ' JASON저장_sessionStorage' ); 
     sessionStorage.setItem('loginUser', JSON.stringify( loginUser ) )
 }
