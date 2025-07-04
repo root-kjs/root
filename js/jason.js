@@ -225,7 +225,7 @@ function getUsers(){  console.log( 'JASON호출_localStorage' );
     let memberList = localStorage.getItem( 'memberList' )
 
     if( memberList == null ){
-        memberList = memberList;
+        memberList = [];
     }else{
         memberList = JSON.parse( memberList ); 
     }
