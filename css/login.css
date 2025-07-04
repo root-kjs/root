@@ -17,6 +17,6 @@
 .loginWrap form #userTypeInput > button{ font-size: 14px; margin:0; }
 
 .loginWrap form #userTypeInput > button:nth-child(2){ margin:0 10px; }
-.loginWrap form #userTypeInput > button.selected, .loginWrap form button[type="submit"]{ background: rgba(0, 191, 99, 1); color: #fff; }
+.loginWrap form #userTypeInput > button.selected, .loginWrap form button[type="submit"], .loginWrap form button.full{ background: rgba(0, 191, 99, 1); color: #fff; }
 
 .loginWrap form > section > input:focus {  background: rgba(235, 255, 245, 1); outline-color: rgba(0, 191, 99, 1);  } 

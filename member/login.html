@@ -49,11 +49,11 @@
         <div class="loginWrap">
             <h1>로그인</h1>
             <!-- 로그인 입력폼 시작 -->
-            <form action="#" method="post">
+            <form>
                 <section>
-                    <input type="text" id="loginIDInput" name="loginIDInput" required placeholder="아이디">
-                    <input type="text" id="pwdInput" name="pwdInput" required placeholder="비밀번호">
-                    <button type="submit" class="selected">LOGIN</button>
+                    <input type="text" id="loginIDInput" name="loginIDInput"  placeholder="아이디">
+                    <input type="password" id="pwdInput" name="pwdInput"  placeholder="비밀번호">
+                    <button type="button" class="full" onclick="userLogin()">LOGIN</button>
                 </section>
             <!-- 로그인 입력폼 끝 -->
                 <section>
@@ -86,7 +86,7 @@
     <!-- footer end -->
 </div>  
 <!-- container end -->
-<script src='../js/nav.js'></script>
+<script src='../js/jason.js'></script>
 <script src='../js/login.js'></script>
 </body>
 </html>

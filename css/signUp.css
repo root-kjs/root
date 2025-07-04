@@ -17,4 +17,4 @@
 .signUpWrap form #userTypeInput > button{ font-size: 14px; margin:0; }
 
 .signUpWrap form #userTypeInput > button:nth-child(2){ margin:0 10px; }
-.signUpWrap form #userTypeInput > button.selected, .signUpWrap form button[type="submit"]{ background: rgba(0, 191, 99, 1); color: #fff; }
+.signUpWrap form #userTypeInput > button.selected, .signUpWrap form button[type="submit"], .signUpWrap form button.full{ background: rgba(0, 191, 99, 1); color: #fff; }
